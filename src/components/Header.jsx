@@ -1,18 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../assets/kts-logo-1.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-50 px-4 sm:px-6 lg:px-8 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 py-4">
       <nav className="max-w-5xl mx-auto bg-kts-nav rounded-full bg-kts-nav/90 backdrop-blur-md shadow-lg px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-kts-blue rounded-full flex items-center justify-center">
-            <span className="text-kts-lime font-bold text-lg">K</span>
-          </div>
-          <span className="hidden sm:inline text-kts-blue font-bold text-lg">KTS</span>
+          <img src={logo} alt="KTS Logo" className="w-13 h-12" />
+          {/* <span className="hidden sm:inline text-kts-blue font-bold text-lg">KTS</span> */}
         </Link>
 
         {/* Desktop Navigation */}
