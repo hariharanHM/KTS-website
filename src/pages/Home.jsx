@@ -66,7 +66,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-kts-blue mb-12 text-center">Our Production Sections</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sections.map((section, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div key={index} className="bg-kts-nav rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden bg-gray-200">
                   <img 
@@ -78,8 +78,8 @@ export default function Home() {
                 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-kts-blue mb-3">{section.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{section.description}</p>
+                  <h3 className="text-xl font-bold text-white mb-3">{section.title}</h3>
+                  <p className="text-white leading-relaxed">{section.description}</p>
                 </div>
               </div>
             ))}
