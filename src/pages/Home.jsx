@@ -78,7 +78,7 @@ export default function Home() {
                 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-3">{section.title}</h3>
+                  <h3 className="text-xl font-bold mb-3" style={{color: '#241C64'}}>{section.title}</h3>
                   <p className="text-white leading-relaxed">{section.description}</p>
                 </div>
               </div>
@@ -88,13 +88,13 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-kts-blue">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Partner With Us?</h2>
-          <p className="text-xl text-gray-200 mb-8">Get a personalized quote for your textile needs today.</p>
-          <button className="px-8 py-4 bg-kts-lime text-kts-blue rounded-full font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105">
+          <h2 className="text-4xl font-bold mb-6" style={{color: '#241C64'}}>Ready to Partner With Us?</h2>
+          <p className="text-xl mb-8" style={{color: '#241C64'}}>Get a personalized quote for your textile needs today.</p>
+          <a href="https://wa.me/919994746541?text=I%20need%20a%20quote" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-kts-lime text-kts-blue rounded-full font-bold text-lg hover:text-white transition-all duration-300 transform hover:scale-105" style={{'--tw-bg-opacity': '1'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#241C64'} onMouseLeave={(e) => e.target.style.backgroundColor = ''}>
             Get a Quote Now
-          </button>
+          </a>
         </div>
       </section>
     </div>

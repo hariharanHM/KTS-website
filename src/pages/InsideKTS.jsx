@@ -23,18 +23,18 @@ export default function InsideKTS() {
   ];
 
   return (
-    <div className="min-h-screen pt-20 pb-20">
+    <div className="min-h-screen pt-32 pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-5xl font-bold text-kts-blue mb-8">Inside KTS</h1>
         <p className="text-xl text-gray-600 mb-12">Behind the scenes of our manufacturing excellence.</p>
         
         <div className="space-y-8 mb-16">
-          <div className="bg-gray-50 p-8 rounded-lg">
+          <div className=" p-8 rounded-lg" style={{backgroundColor: '#AAC645'}}>
             <h2 className="text-2xl font-bold text-kts-blue mb-4">Manufacturing Process</h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-white mb-4">
               Our state-of-the-art manufacturing facilities are equipped with the latest technology to ensure precision and quality.
             </p>
-            <ol className="text-gray-700 space-y-2 list-decimal list-inside">
+            <ol className="text-white space-y-2 list-decimal list-inside">
               <li>Raw material sourcing and quality verification</li>
               <li>Advanced processing and treatment</li>
               <li>Rigorous quality testing</li>
@@ -47,7 +47,7 @@ export default function InsideKTS() {
         <h2 className="text-3xl font-bold text-kts-blue mb-8">Our Production Sections</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sections.map((section, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <div key={index} className=" rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"style={{backgroundColor: '#AAC645'}}>
               {/* Image */}
               <div className="relative h-48 overflow-hidden bg-gray-200">
                 <img 
@@ -59,8 +59,8 @@ export default function InsideKTS() {
               
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-kts-blue mb-3">{section.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{section.description}</p>
+                <h3 className="text-xl font-bold mb-3" style={{color: '#241C64'}}>{section.title}</h3>
+                <p className="text-white leading-relaxed">{section.description}</p>
               </div>
             </div>
           ))}

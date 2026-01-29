@@ -24,9 +24,9 @@ export default function Header() {
 
         {/* Get a Quote Button */}
         <div className="flex items-center space-x-4">
-          <button className="hidden md:block px-6 py-2 bg-kts-blue text-white rounded-full font-semibold hover:bg-opacity-90 transition-colors">
+          <a href="https://wa.me/919994746541?text=I%20need%20a%20quote" target="_blank" rel="noopener noreferrer" className="hidden md:block px-6 py-2 bg-kts-blue text-white rounded-full font-semibold hover:bg-opacity-90 transition-colors">
             Get a Quote
-          </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -48,9 +48,9 @@ export default function Header() {
             <Link to="/meet-kts" className="block hover:text-white transition">Meet KTS</Link>
             <Link to="/what-we-offer" className="block hover:text-white transition">What We Offer</Link>
             <Link to="/inside-kts" className="block hover:text-white transition">Inside KTS</Link>
-            <button className="w-full px-6 py-2 bg-kts-blue text-white rounded-full font-semibold hover:bg-opacity-90 transition-colors">
+            <a href="https://wa.me/919994746541?text=I%20need%20a%20quote" target="_blank" rel="noopener noreferrer" className="w-full block px-6 py-2 bg-kts-blue text-white rounded-full font-semibold hover:bg-opacity-90 transition-colors text-center">
               Get a Quote
-            </button>
+            </a>
           </div>
         </div>
       )}

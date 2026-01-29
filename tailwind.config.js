@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'kts-lime': '#C6D928',
+        'kts-lime': '#AAC645',
         'kts-blue': '#1a2a6f',
         'kts-nav': '#AAC645',
       },

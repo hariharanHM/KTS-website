@@ -31,9 +31,9 @@ export default function Hero() {
         </h2>
 
         {/* Call to Action Button */}
-        <button className="inline-block px-8 py-4 bg-kts-blue text-white rounded-full font-bold text-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+        <a href="https://wa.me/919994746541?text=I%20need%20a%20quote" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 bg-kts-blue text-white rounded-full font-bold text-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
           Get a Quote
-        </button>
+        </a>
       </div>
 
       {/* Bottom Stats */}

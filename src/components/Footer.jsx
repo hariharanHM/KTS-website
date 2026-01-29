@@ -40,9 +40,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-kts-lime">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-kts-lime transition">LinkedIn</a>
-              <a href="#" className="text-gray-300 hover:text-kts-lime transition">Facebook</a>
               <a href="#" className="text-gray-300 hover:text-kts-lime transition">Twitter</a>
+              <a href="#" className="text-gray-300 hover:text-kts-lime transition">Facebook</a>
+              <a href="#" className="text-gray-300 hover:text-kts-lime transition">Instagram</a>
             </div>
           </div>
         </div>
@@ -52,8 +52,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
           <p>&copy; 2026 KTS Fabrics. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-kts-lime transition">Privacy Policy</a>
-            <a href="#" className="hover:text-kts-lime transition">Terms of Service</a>
+            <a href="https://designerx.in/" target="_blank" rel="noopener noreferrer" className="hover:text-kts-lime transition">Designed & developed by DesignerX</a>
           </div>
         </div>
       </div>
