@@ -1,4 +1,5 @@
 import React from 'react';
+import ktsLogo from '../assets/kts-logo.png';
 
 export default function Footer() {
   return (
@@ -7,9 +8,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              <span className="text-kts-lime">KTS</span> FABRICS
-            </h3>
+            <div className="mb-4">
+              <img src={ktsLogo} alt="KTS Fabrics Logo" className="h-25 w-25 object-contain" />
+            </div>
             <p className="text-gray-300">Global Textile Solutions, Crafted in India</p>
           </div>
 
@@ -28,9 +29,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-kts-lime">Contact</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>Email: info@ktsfabrics.com</li>
-              <li>Phone: +91 XXXX XXX XXX</li>
-              <li>Address: India</li>
+              <li>Email: kts@ktsfabricx.com / marketing@ktsfabricx.com</li>
+              <li>Phone: +91 9994746541</li>
+              <li>Address: No. 16/2, Vella Gounder Nagar, Rayanoor, Thanthonimalai (Post), Karur – 639 005.
+</li>
             </ul>
           </div>
 
