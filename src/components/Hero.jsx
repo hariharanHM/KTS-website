@@ -1,19 +1,19 @@
 import React from 'react';
+import fabricImage from '../assets/hero-fabric.png';
 
 export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-50"></div>
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${fabricImage})`,
+        }}
+      ></div>
 
-      {/* Fabric Background Elements */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        {/* Left side - Lime Fabric */}
-        <div className="absolute left-0 w-1/2 h-full bg-gradient-to-r from-kts-lime via-yellow-300 to-transparent opacity-40 transform -skew-x-12 origin-center"></div>
-        
-        {/* Right side - Dark Blue Fabric */}
-        <div className="absolute right-0 w-1/2 h-full bg-gradient-to-l from-kts-blue via-blue-900 to-transparent opacity-60 transform skew-x-12 origin-center"></div>
-      </div>
+      {/* Dark Overlay for text readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -31,7 +31,7 @@ export default function Hero() {
         </h2>
 
         {/* Call to Action Button */}
-        <button className="inline-block px-8 py-4 bg-blue-600 text-white rounded-full font-bold text-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+        <button className="inline-block px-8 py-4 bg-kts-blue text-white rounded-full font-bold text-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
           Get a Quote
         </button>
       </div>
